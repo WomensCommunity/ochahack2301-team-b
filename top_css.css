@@ -5,13 +5,13 @@
   background-size: cover;
   background-position: 25% 25%;
 }
-#home {
+#top {
   background-image: url(./top_pic.jpg);
   height: 100vh;
   font-size: 14px;
 }
 /*トップ画面タイトル*/
-#home h1{
+#top h1{
   color: #140500;
   font-family: 'Garamond', serif;
   font-size: 7vw;
@@ -19,14 +19,14 @@
   margin-bottom: 0;
 }
 /*トップ画面説明書き*/
- #home p {
+ #top p {
   color: #140500;
   font-family: 'Garamond', serif;
   font-size: 3vw;
   margin-left: 0;
 }
 
-/*ナビゲーションアイテム*/
+/*トップ画面ナビゲーションアイテム*/
 ul#menu{
   list-style:none;
   margin:1em 0; padding:0;
@@ -50,4 +50,62 @@ ul#menu a{
   font-family: 'Garamond', serif;
   border-bottom:1px solid #eee;
   text-decoration:none;
+}
+
+/*他のページのナビゲーション*/
+
+ul#menu1{
+  list-style:none;
+  margin:0; padding:20px;
+  background-color: #140500;
+}
+ul#menu1 li{
+  display:inline;
+  text-align:center;
+  padding:0 0 0 .5em;
+}
+ul#menu1 a:hover,
+ul#menu1 a#current {
+  color:#f6dbb096;
+  font-size: 20px;
+  font-family: 'Garamond', serif;
+  border-bottom:1px solid #faf8f65e;
+  text-decoration:none;
+} 
+ul#menu1 a{
+  color:#ffebd5; font-weight:bold;
+  font-size: 20px;
+  font-family: 'Garamond', serif;
+  border-bottom:1.5px solid #eeeeee70;
+  text-decoration:none;
+}
+
+/*レシピページ*/
+
+
+#recipe h2{
+  color: #140500;
+  font-family: 'Garamond', serif;
+  font-size: 5vw;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+#recipe h3{
+  color: #140500;
+  font-family: 'Garamond', serif;
+  font-size: 3vw;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+ul#item{
+  color: #140500;
+  font-family: 'Garamond', serif;
+  font-size: 2vw;
+  margin-left: 0;
+}
+ol#num{
+  color: #140500;
+  font-family: 'Garamond', serif;
+  font-size: 2vw;
+  margin-left: 0;
 }
