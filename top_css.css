@@ -81,8 +81,6 @@ ul#menu1 a{
 }
 
 /*レシピページ*/
-
-
 #recipe h2{
   color: #140500;
   font-family: 'Garamond', serif;
@@ -108,4 +106,14 @@ ol#num{
   font-family: 'Garamond', serif;
   font-size: 2vw;
   margin-left: 0;
+}
+#material {
+  position: absolute;
+  right: 50px;
+  top: 200px;
+}
+#howtomake {
+  position: absolute;
+  left: 50px;
+  top: 200px;
 }
