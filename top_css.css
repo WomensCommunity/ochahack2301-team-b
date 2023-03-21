@@ -17,7 +17,7 @@
   font-size: 7vw;
   margin-right: 60vw;
   margin-bottom: 0;
-}
+}eatam
 /*トップ画面説明書き*/
  #top p {
   color: #140500;
@@ -81,30 +81,44 @@ ul#menu1 a{
 }
 
 /*レシピページ*/
+#recipe {
+  background-image: url(./recipe_pic.jpg);
+  background-size:cover;
+  font-size: 14px;
+}
 #recipe h2{
-  color: #140500;
+  color: #f6ece0;
   font-family: 'Garamond', serif;
-  font-size: 5vw;
+  font-size: 5.2vw;
   margin-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 #recipe h3{
-  color: #140500;
+  color: #f4d3c7;
   font-family: 'Garamond', serif;
-  font-size: 3vw;
+  font-size: 30px;
   margin-left: 0;
+  margin-top: 10px;
   margin-bottom: 0;
 }
-ul#item{
-  color: #140500;
+#recipe h4{
+  color: #f4d3c7;
   font-family: 'Garamond', serif;
-  font-size: 2vw;
+  font-size: 60px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+ul#item{
+  color: #d4cccae4;
+  font-family: 'Garamond', serif;
+  font-size: 3vh;
   margin-left: 0;
 }
 ol#num{
-  color: #140500;
+  color: #4e2e01;
   font-family: 'Garamond', serif;
-  font-size: 2vw;
+  font-size: 3vh;
   margin-left: 0;
 }
 #material {
@@ -115,5 +129,5 @@ ol#num{
 #howtomake {
   position: absolute;
   left: 50px;
-  top: 200px;
+  top: 100px;
 }
