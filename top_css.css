@@ -1,0 +1,53 @@
+/*トップ画面背景*/
+@chartest "UTF-8";
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 25%;
+}
+#home {
+  background-image: url(./top_pic.jpg);
+  height: 100vh;
+  font-size: 14px;
+}
+/*トップ画面タイトル*/
+#home h1{
+  color: #140500;
+  font-family: 'Garamond', serif;
+  font-size: 7vw;
+  margin-right: 60vw;
+  margin-bottom: 0;
+}
+/*トップ画面説明書き*/
+ #home p {
+  color: #140500;
+  font-family: 'Garamond', serif;
+  font-size: 3vw;
+  margin-left: 0;
+}
+
+/*ナビゲーションアイテム*/
+ul#menu{
+  list-style:none;
+  margin:1em 0; padding:0;
+}
+ul#menu li{
+  display:inline;
+  text-align:center;
+  padding:0 0 0 .5em;
+}
+ul#menu a:hover,
+ul#menu a#current {
+  color:#211d1b4e;
+  font-size: 15px;
+  font-family: 'Garamond', serif;
+  border-bottom:1px solid #da6702a2;
+  text-decoration:none;
+} 
+ul#menu a{
+  color:#280c02; font-weight:bold;
+  font-size: 15px;
+  font-family: 'Garamond', serif;
+  border-bottom:1px solid #eee;
+  text-decoration:none;
+}
