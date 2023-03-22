@@ -1,0 +1,40 @@
+
+
+h1{
+    font-family: 'Garamond', serif;
+    font-weight:bold;
+    font-size: 50px;
+}
+
+
+
+
+body{
+    margin: 0;
+}
+
+  ul#menu1{
+    list-style:none;
+    margin:0; padding:20px;
+    background-color: #140500;
+  }
+  ul#menu1 li{
+    display:inline;
+    text-align:center;
+    padding:0 0 0 .5em;
+  }
+  ul#menu1 a:hover,
+  ul#menu1 a#current {
+    color:#f6dbb096;
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    border-bottom:1px solid #faf8f65e;
+    text-decoration:none;
+  } 
+  ul#menu1 a{
+    color:#ffebd5; font-weight:bold;
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    border-bottom:1.5px solid #eeeeee70;
+    text-decoration:none;
+  }

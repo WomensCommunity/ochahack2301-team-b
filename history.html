@@ -4,20 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>クロワッサンとは...?</h2>
-    <img src="croissant.jpg">
-    <p>フランス発祥のパンの一種で、三日月形をした層状のパイ生地を焼き上げたもの。</p>
-    <p>朝食や軽食、おやつなど、様々な場面で楽しまれる人気のパンのひとつ。</p>
-    <h2>クロワッサンの歴史</h2>
-    <img src="history.jpeg">
-    <p>一般的には17世紀にウィーンで作られたパンが、19世紀にフランスに伝わり、フランスでクロワッサンとして発展したとされている。</p>
-    <p> 当初は「ウィーンのパン（Pain Viennois）」と呼ばれフランスでもパリの高級パン屋でしか販売されていなかったが、20世紀に入ると一般市民にも手軽に購入できるようになった。</p>
-    <p> 第一次世界大戦後の1920年代には、パリのカフェ文化の一部として広く愛されるようになる。</p>
-    
+    <title>About</title>
+
+    <link rel="stylesheet" href="history_body.css">
+
+    <link rel="stylesheet" href="history_header.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
 
     
+    <style>
+    @media (min-width: 600px) {
+      #parent {
+        display: flex;
+      }
+      #child1 {
+        flex-grow: 1;
+      }
+      #child2 {
+        flex-grow: 1;
+      }
+    }
+    </style>
+</head>
+
+<body>
+      
+
+   
+
+    <header>  
+        <nav>         
+            <ul id="menu1">               
+                <li><a href="./toppage.html">Haut</a></li>                
+                <li><a href="./toppage.html">Haut</a></li>                
+                <li><a href="./history.html">Histoire</a></li>           
+                <li><a href="./friends.html">Ami croissant</a></li>               
+                <li><a href="./recipe.html">Recette</a></li>               
+                <li><a href="./reccomend.html">Boulangerie recommandée</a></li>
+             </ul>
+         </nav>
+
+         
+</header>
+    
+<div id="splash">
+    <div id="splash_text"></div>
+    <!--/splash--></div>
+    <div id="container">  
+    
+    
+    <header>
+
+    <div class="box fadeUp">
+    <h1>
+    About Crossiant
+    </h1>
+    </div>
+   
+
+  
+    </header>
+</div>   
+           
+    <div class="box fadeUpTrigger">
+    <h2 class="fadeIn2">
+        
+        What is Crossiant?
+        
+      
+    </h2>
+    </div>
+    
+    
+   
+    <div class="box fadeUpTrigger">
+    <img src="croissant.jpg">
+    </div>
+
+    <div class="box fadeUpTrigger">
+    <p>フランス発祥のパンの一種で、三日月形をした層状のパイ生地を焼き上げたもの。
+    朝食や軽食、おやつなど、様々な場面で楽しまれる人気のパンのひとつ。
+    </p>
+    </div>
+
+
+    <div class="box fadeUpTrigger">
+    <h2 >
+        
+        History of Crossiant
+        
+    </h2>
+    </div>
+
+    <div class="box fadeUpTrigger">
+    <img src="history.jpeg">
+    </div>
+  
+    <div class="box fadeUpTrigger">
+    <p>
+        一般的には17世紀にウィーンで作られたパンが、19世紀にフランスに伝わり、フランスでクロワッサンとして発展したとされている。
+        当初は「ウィーンのパン（Pain Viennois）」と呼ばれフランスでもパリの高級パン屋でしか販売されていなかったが、20世紀に入ると一般市民にも手軽に購入できるようになった。
+        第一次世界大戦後の1920年代には、パリのカフェ文化の一部として広く愛されるようになる。
+    </p>
+    </div>
+
+
+    <div class="box fadeUpTrigger">
+    <h2>
+        Gallery
+    </h2>
+    </div>
+
+    
+    
+    <ul class="gallery">
+        <li><a href="crossiant3.jpg" data-lightbox="gallery1" ><img src="crossiant3.jpg" alt=""></a></li>
+        <li><a href="crossiant5.jpeg" data-lightbox="gallery1" ><img src="crossiant5.jpeg" alt=""></a></li>
+        <li><a href="crossiant6.jpg" data-lightbox="gallery1" ><img src="crossiant6.jpg" alt=""></a></li>
+        <li><a href="crossiant7.jpg" data-lightbox="gallery1" ><img src="crossiant7.jpg" alt=""></a></li>
+        <li><a href="crossiant8.jpg" data-lightbox="gallery1" ><img src="crossiant8.jpg" alt=""></a></li>
+        <li><a href="crossiant10.jpg" data-lightbox="gallery1" ><img src="crossiant10.jpg" alt=""></a></li>
+        </ul>
+   
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+   
+
+    <script src="history.js"></script>
 </body>
 </html>
