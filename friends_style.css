@@ -6,31 +6,31 @@
     no-repeat;
     transition:0.8s;
     font-weight: bold;
-    padding: 10px;
-    font-size: 16px;
+    padding: 30px;
+    font-size: 24px;
 }
 .text_ul_appear:hover{
-    --d: 65%;
+    --d: 120%;
     font-weight: bold;
-    padding: 25px;
-    font-size: 24px;
+    padding: 40px;
+    font-size: 30px;
 }
 
 /* マウスオーバー時に説明部分の背景色を変え、文字を大きくする */
 /* 通常時 */
 .explanation{
     background-color: white;
-    padding: 10px;
+    padding: 30px;
     font-size: 16px;
-    -webkit-transition: all 0.8s ease;
+    /* -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
-    transition: all  0.8s ease;
+    transition: all  0.8s ease; */
 }
 /* マウスオーバー時 */
 .explanation:hover{
     background-color: floralwhite;
-    padding: 25px;
+    padding: 30px;
     font-size: 24px;
 }
 
@@ -211,5 +211,12 @@ ul#menu1{
     div{
         font-family: 'Garamond', serif;
     }
-  
 
+    body{
+        margin: 0;
+        background-color: #F5DEB3;
+    }
+
+    h1{
+        padding: 30px;
+    }
