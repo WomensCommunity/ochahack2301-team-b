@@ -43,6 +43,8 @@ body{
 
 /* お店の名前 */
 .name-first{
+    overflow-wrap: normal;
+
     display    : inline-block;
     position   : relative;
     font-family: 'Garamond', serif;
@@ -62,6 +64,8 @@ body{
     animation  : Anime 3s ease-in infinite;  
 }
 .name{
+    overflow-wrap: normal;
+    
     display    : inline-block;
     position   : relative;
     font-family: 'Garamond', serif;
