@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+  }
+
+  /* お店の詳細情報の設定 */
+.more{
+    opacity: 0;
+}
+
+.more:hover{
+    opacity: 1;
+    transform: translate(0, 100);
+}
+
+/* 背景画像の設定 */
+#home{
+    background-image: url(./fresh.jpg);
+    background-size: cover;
+    opacity: 1;
+}
+
+/* タイトル */
+.title{
+    vertical-align: top; 
+    font-family: 'Garamond', serif;
+    color:#7c4800;
+    font-weight: 900;
+    font-size: 2.5em;
+    padding-left: 15px;
+}
+
+/* 本文 */
+.text{
+    font-family: 'Garamond', serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-left: 15px;
+}
+
+.text span{
+    background: linear-gradient(transparent 0%, #fbd5dc 0%);
+    padding: 5px;
+}
+
+/* お店の名前 */
+.name-first{
+    display    : inline-block;
+    position   : relative;
+    font-family: 'Garamond', serif;
+    font-weight: 700;
+    line-height: 0.15em;
+    font-size: 2em;
+    padding: 15px;
+    margin-bottom: 0.1em;
+}
+.name-first span{
+    display    : inline-block;
+    position   : absolute;
+    top        : 20px;
+    left       : 15px;
+    bottom     : 0;
+    right      : 0;
+    background : linear-gradient(transparent 40%, rgba(252, 193, 104, 0.47) 60%); 
+    animation  : Anime 3s ease-in infinite;  
+}
+.name{
+    display    : inline-block;
+    position   : relative;
+    font-family: 'Garamond', serif;
+    font-weight: 700;
+    line-height: 0.15em;
+    font-size: 2em;
+    padding: 15px;
+    margin-bottom: 0.1em;
+    margin-top: 0.8em;
+}
+.name span{
+    display    : inline-block;
+    position   : absolute;
+    top        : 20px;
+    left       : 15px;
+    bottom     : 0;
+    right      : 0;
+    background : linear-gradient(transparent 40%, rgba(252, 193, 104, 0.47) 60%); 
+    animation  : Anime 3s ease-in infinite;  
+}
+
+@keyframes Anime {
+    0% { right : 100%; }     
+  100% { right : 0;    }     
+ }
+
+ /* お店の詳細情報の設定 */
+.more{
+    font-family: 'Garamond', serif;
+    font-weight: 550;
+    font-size: 1.1em;
+    width: 680px;
+    background:#fbf3e59a;
+    margin:0 2em;
+    position: relative;
+    padding: 10px 0px;
+}
+
+/* ヘッダー */
+ul#menu1{
+    list-style:none;
+    margin:0; padding:20px;
+    background-color: #140500;
+  }
+  ul#menu1 li{
+    display:inline;
+    text-align:center;
+    padding:0 0 0 .5em;
+  }
+  ul#menu1 a:hover,
+  ul#menu1 a#current {
+    color:#f6dbb096;
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    border-bottom:1px solid #faf8f65e;
+    text-decoration:none;
+  } 
+  ul#menu1 a{
+    color:#ffebd5; font-weight:bold;
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    border-bottom:1.5px solid #eeeeee70;
+    text-decoration:none;
+  }
