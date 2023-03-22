@@ -1,0 +1,215 @@
+/* マウスオーバー時に見出しのテキストにアンダーラインを表示 */
+.text_ul_appear{
+    background:
+        linear-gradient(currentColor 0 0)
+        0 100% /var(--d, 0) 2px
+    no-repeat;
+    transition:0.8s;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+}
+.text_ul_appear:hover{
+    --d: 65%;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 24px;
+}
+
+/* マウスオーバー時に説明部分の背景色を変え、文字を大きくする */
+/* 通常時 */
+.explanation{
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all  0.8s ease;
+}
+/* マウスオーバー時 */
+.explanation:hover{
+    background-color: floralwhite;
+    padding: 25px;
+    font-size: 24px;
+}
+
+/*  マウスオーバー時に3つのパンのテキストを変化させる */
+.item_name{
+    background:
+        linear-gradient(currentColor 0 0)
+        0 100% /var(--d, 0) 2px
+    no-repeat;
+    transition:0.8s;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+.item_name:hover{
+    --d: 30%;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul#menu1{
+    list-style:none;
+    margin:0; padding:20px;
+    background-color: #140500;
+  }
+  ul#menu1 li{
+    display:inline;
+    text-align:center;
+    padding:0 0 0 .5em;
+  }
+  ul#menu1 a:hover,
+  ul#menu1 a#current {
+    color:#f6dbb096;
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    border-bottom:1px solid #faf8f65e;
+    text-decoration:none;
+  } 
+  ul#menu1 a{
+    color:#ffebd5; font-weight:bold;
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    border-bottom:1.5px solid #eeeeee70;
+    text-decoration:none;
+  }
+
+  h1{
+    font-family: 'Garamond', serif;
+  }
+
+  /* サムネイル関連（ページを読み込んだら下から出現など） */
+  ul.thumbnail{
+    list-style: none;   
+    display: flex;
+    justify-content:space-around;
+    margin: 0;
+    padding: 0;
+}
+.thumbnail li{
+    position: relative;
+    width:30%;
+}
+
+/* ページ読み込み時に3つのパンの画像が下から出現 */
+.thumbnail img{
+    height: auto;
+    width: 100%;
+    display: block;
+    animation-name:fadeUpAnime;
+    animation-duration:5.0s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.thumbnail div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    transition: 0.8s; 
+    /* ここのtransitionを変更すると、背景の黒が濃くなる速度が変わる */
+}
+.thumbnail li:hover div{
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
+    animation-name:fadeUpAnime;
+    animation-duration:0.8s;
+    /* ここのanimation-durationを変えると下からの出現速度が変わる */
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+}
+  
+/* 下から
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    } */
+    
+    /*非表示エリアをはじめは隠す*/
+    .hide_area1{
+         display: none;
+    }
+    
+    /*クリックされたら fadeUpクラスを付与し、display:block;で表示させる*/
+    .hide_area1.fadeUp {
+        display:block;
+    }
+    
+    /* ボタンがクリックされた後にボタン自体が非表示になる　*/ 
+    .btn1.disp_none{
+        display: none;
+    }
+
+      /* fadeUp */
+    .fadeUp{
+        animation-name:fadeUpAnime;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+        opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    p{
+        font-family: 'Garamond', serif;
+    }
+  
+    div{
+        font-family: 'Garamond', serif;
+    }
+  
+

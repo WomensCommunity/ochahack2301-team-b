@@ -5,41 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="friends_style.css">
     <title>クロワッサンの仲間</title>
 
-    
+    <!-- <script type="text/javascript" src="script.js"></script> -->
 </head>
 <!-- bodyはホームページの中身です -->
 <body>
     <!-- headerはページの先頭を入れます -->
-    <header></header>  
+    <header>  
+        <nav>         
+            <ul id="menu1">               
+                <li><a href="./toppage.html">Haut</a></li>                
+                <li><a href="./toppage.html">Haut</a></li>                
+                <li><a href="./history.html">Histoire</a></li>           
+                <li><a href="./friends.html">Ami croissant</a></li>               
+                <li><a href="./recipe.html">Recette</a></li>               
+                <li><a href="./reccomend.html">Boulangerie recommandée</a></li>
+             </ul>
+         </nav>
+    </header>
+    <h1>クロワッサンの仲間（Ami Croissant）</h1>
+
+    <!-- ページ内リンクを埋め込んだ画像を横並びに表示 -->
+    <ul class = "thumbnail">
+        <li class = "btn1">
+            <a href="./danish.html"><img src="danish.jpeg" width ="300" height="200" alt="">
+            <div>デニッシュ（Danish）</div></a> 
+        </li>
+        <!-- divだとうまく動かないので、sectionにする -->
+        <!-- <section class="hide_area1">
+            <div id="danish" class = "item_name">デニッシュ（Danish）</div>
+            <img src="danish.jpeg">
+            <p>「デニッシュ」とは、パン生地にバターを折り込んでパイのように仕上げたパン。<br>外はサクッと中はふんわりとした食感で、バターのリッチな味わいが魅力の菓子パン。
+            </p>
+            <blockquote>
+                <p><cite>引用：<a href="https://www.kurashiru.com/articles/b4de380f-c068-4a7a-b5a1-912d7a489cf4" target="_blank" rel="noopener noreferrer">デニッシュと他のパンの違いって？特徴とレシピをご紹介 | クラシル</a></cite></p>
+            </blockquote>
+            <div class = "text_ul_appear">
+                クロワッサンとの関係（Relation with Croissant）
+            </div>
+            <div class = "explanation">
+                デニッシュとクロワッサンは同じ生地が使われることが多く、ふたつの違いに明確な規定はありません。<br>
+                しかし、お店によって、デニッシュはバターを多めに加えた甘めの生地、クロワッサンは小麦の風味を活かした甘さ控えめの生地と、使いわけているところもあります。
+                <br>また、デニッシュは具材を加えて菓子パンとして、クロワッサンは具材を加えずに食事パンとしていただくことが多いです。
+            </div>
+            <blockquote>
+                <p><cite>引用：<a href="https://www.kurashiru.com/articles/b4de380f-c068-4a7a-b5a1-912d7a489cf4" target="_blank" rel="noopener noreferrer">デニッシュと他のパンの違いって？特徴とレシピをご紹介 | クラシル</a></cite></p>
+            </blockquote>
+        </section> -->
+        <li><a href="./brioche.html"><img src="brioche.jpeg" width ="300" height="200" alt="">
+            <div>ブリオッシュ（Brioche）</div></a>
+        </li>
+        <li><a href="./pie.html"><img src="pie.jpeg" width ="300" height="200" alt="">
+            <div>パイ（Pie）</div></a>
+        </li>
+    </ul>
+    <style>
+        li {
+          list-style: none;
+        }
+    </style>
+
+    <!-- ページ内リンクの飛ぶ先 -->
+    <!-- <div id="danish" class = "item_name">
+        デニッシュ（Danish）
+    </div>
+
+    <img src="danish.jpeg">
+    <p>「デニッシュ」とは、パン生地にバターを折り込んでパイのように仕上げたパン。<br>外はサクッと中はふんわりとした食感で、バターのリッチな味わいが魅力の菓子パン。
+    </p>
+    <blockquote>
+        <p><cite>引用：<a href="https://www.kurashiru.com/articles/b4de380f-c068-4a7a-b5a1-912d7a489cf4" target="_blank" rel="noopener noreferrer">デニッシュと他のパンの違いって？特徴とレシピをご紹介 | クラシル</a></cite></p>
+    </blockquote>
+    <div class = "text_ul_appear">
+        クロワッサンとの関係（Relation with Croissant）
+    </div>
+    <div class = "explanation">
+        デニッシュとクロワッサンは同じ生地が使われることが多く、ふたつの違いに明確な規定はありません。<br>しかし、お店によって、デニッシュはバターを多めに加えた甘めの生地、クロワッサンは小麦の風味を活かした甘さ控えめの生地と、使いわけているところもあります。
+        <br>また、デニッシュは具材を加えて菓子パンとして、クロワッサンは具材を加えずに食事パンとしていただくことが多いです。
+    </div>
+    <blockquote>
+        <p><cite>引用：<a href="https://www.kurashiru.com/articles/b4de380f-c068-4a7a-b5a1-912d7a489cf4" target="_blank" rel="noopener noreferrer">デニッシュと他のパンの違いって？特徴とレシピをご紹介 | クラシル</a></cite></p>
+    </blockquote> -->
+
+    <!-- ページ内リンクの飛ぶ先 -->
+    <!-- <div id="brioche" div class = "item_name">
+        ブリオッシュ（Brioche）
+    </div>
+    <img src="brioche.jpeg">
+    <p>「ブリオッシュ」とは、バターと卵をたっぷりと配合したフランス発祥のリッチな菓子パンの1種。<br>
+        名前の由来としては、「bris（ブリ）＝砕く」「hocher（オシェ）＝ゆさぶる」のふたつの言葉を組み合わせたという説と、ブリ―地方（チーズで有名です）の名前からという説があるようです。
+    </p>
+    <blockquote>
+        <p><cite>引用：<a href="https://tomiz.com/column/brioche-recipe/" target="_blank" rel="noopener noreferrer">ブリオッシュとは？｜基礎知識や特徴、人気レシピ＆作り方を総まとめ | 富澤商店</a></cite></p>
+    </blockquote>
+    <div class = "text_ul_appear">
+        クロワッサンとの関係（Relation with Croissant）
+    </div>
+    <div class = "explanation">
+        ブリオッシュは「viennoiserie（ヴィエノワズリー）」と呼ばれるパン菓子の代表的なもののひとつで、その仲間にはほかにクロワッサン、パン・オ・ショコラ、パン・オ・レザンといった発酵生地や折込の発酵生地で作られる朝食やおやつ用の製品があります。
+    </div>
+    <blockquote>
+        <p><cite>引用：<a href="https://tomiz.com/column/brioche-recipe/" target="_blank" rel="noopener noreferrer">ブリオッシュとは？｜基礎知識や特徴、人気レシピ＆作り方を総まとめ | 富澤商店</a></cite></p>
+    </blockquote> -->
+    
+    <!-- ページ内リンクの飛ぶ先 -->
+    <!-- <div id="pie" div class = "item_name">
+        パイ（Pie）
+    </div>
+
+    <img src="pie.jpeg">
+    <p>「パイ」は主に小麦粉とバターなどで練った生地に、食材を包んで焼き上げた料理の総称です。<br>有名な料理はアップルパイやミートパイ、カスタードパイ、ミルフィーユなどがあります。
+    </p>
+    <blockquote>
+        <p><cite>引用：<a href="https://www.napolipizza.jp/blog/3242/" target="_blank" rel="noopener noreferrer">パイ －料理にもお菓子にも大活躍－ | ナポリの窯</a></cite></p>
+    </blockquote>
+    <div class = "text_ul_appear">
+        クロワッサンとの関係（Relation with Croissant）
+    </div>
+    <div class = "explanation">
+        デニッシュとクロワッサンはパンに分類されますが、パイはお菓子に分類されます。<br>これらの大きな違いは、パイはイーストを使わないので発酵させる工程がないところです。
+    </div>
+    <blockquote>
+        <p><cite>引用：<a href="https://www.kurashiru.com/articles/b4de380f-c068-4a7a-b5a1-912d7a489cf4" target="_blank" rel="noopener noreferrer">デニッシュと他のパンの違いって？特徴とレシピをご紹介 | クラシル</a></cite></p>
+    </blockquote> -->
+
     <!-- footerは参照とかを入れます -->
     <footer></footer>
 
-    <h1>クロワッサンの仲間（Croissant's friends）</h1>
-    <h2>デニッシュ（Danish）</h2>
-    <img src="danish.jpeg">
-    <p>「デニッシュ」とは、パン生地にバターを折り込んでパイのように仕上げたパンのこと。外はサクッと中はふんわりとした食感で、バターのリッチな味わいが魅力の菓子パンです。
-    </p>
-    <h3>クロワッサンとの関係（Relation with Croissant）</h3>
-    <p>実は、デニッシュとクロワッサンは同じ生地が使われることが多く、ふたつの違いに明確な規定はありません。しかし、お店によって、デニッシュはバターを多めに加えた甘めの生地、クロワッサンは小麦の風味を活かした甘さ控えめの生地と、使いわけているところもあります。
-        また、デニッシュは具材を加えて菓子パンとして、クロワッサンは具材を加えずに食事パンとしていただくことが多いです。　
-        </p>
-    
-    <h2>ブリオッシュ（Brioche）</h2>
-    <img src="brioche.jpeg">
-    <p>ブリオッシュとは、バターと卵をたっぷりと配合したフランス発祥のリッチな菓子パンの1種。
-        名前の由来としては、「bris（ブリ）＝砕く」「hocher（オシェ）＝ゆさぶる」のふたつの言葉を組み合わせたという説と、ブリ―地方（チーズで有名です）の名前からという説があるようです。
-    </p>
-    <h3>クロワッサンとの関係（Relation with Croissant）</h3>
-    <p>ブリオッシュは「viennoiserie（ヴィエノワズリー）」と呼ばれるパン菓子の代表的なもののひとつで、その仲間にはほかにクロワッサン、パン・オ・ショコラ、パン・オ・レザンといった発酵生地や折込の発酵生地で作られる朝食やおやつ用の製品があります。
-    </p>
-
-    
-    <h2>パイ（Pie）</h2>
-    <img src="pie.jpeg">
-    <h3>クロワッサンとの関係（Relation with Croissant）</h3>
-    <p>デニッシュとクロワッサンはパンに分類されますが、パイはお菓子に分類されます。これらの大きな違いは、パイはイーストを使わないので発酵させる工程がないところです。
-    </p>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-4/js/3-2-3-4.js"></script>
 </body>
+
+
 </html>  
