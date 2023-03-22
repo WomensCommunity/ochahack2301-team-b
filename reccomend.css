@@ -26,7 +26,7 @@ body{
     color:#7c4800;
     font-weight: 900;
     font-size: 2.5em;
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 /* 本文 */
@@ -34,9 +34,8 @@ body{
     font-family: 'Garamond', serif;
     font-weight: 700;
     font-size: 1.2em;
-    padding-left: 15px;
+    padding-left: 30px;
 }
-
 .text span{
     background: linear-gradient(transparent 0%, #fbd5dc 0%);
     padding: 5px;
@@ -50,7 +49,6 @@ body{
     font-weight: 700;
     line-height: 0.15em;
     font-size: 2em;
-    padding: 15px;
     margin-bottom: 0.1em;
 }
 .name-first span{
